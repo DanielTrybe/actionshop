@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.prodSection {
+  display: flex;
+  background: white;
+}
+
+/* parte dos produtos */
+
+.ulProd {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.ulProd li {
+  min-width: 200px;
+  min-height: 390px;
+  max-width: 200px;
+  max-height: 390px;
+  margin: 0 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.divImg {
+  min-height: 250px;
+  display: flex;
+}
+
+.divImg img {
+  width: 200px;
+  max-height: 270px;
+  overflow: hidden;
+  list-style-type: none;
+  border-radius: 10px;
+}
+
+.buttons button {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: center;
+  margin-top: 5px
+}
+
+/* .divText {
+  position: relative;
+  box-sizing:content-box;
+} */
+
+/* parte da propaganda */
+
+.asideDireita {
+  width: 500px;
+}
+
+.asideEsquerda {
+  width: 500px;
+}

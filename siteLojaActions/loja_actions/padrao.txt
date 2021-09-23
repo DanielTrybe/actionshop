@@ -1,0 +1,67 @@
+Componentes
+<Header> - campo de busca, categorias e links
+<Footer> - detalhes da empresa e links
+
+<ContextGeral> - Vai conter favoritos e informações do usuario
+
+ Paginas de Produtos
+ <ProdContext> - Relações somente com produto
+  <index> - Promoções e afins
+  <ProdList> - Produtos exibidos quando se busca
+  <Details> - Clicar em um item
+  <Cart> - Itens a comprar
+  <Checkout> - Valor total e item a pagar
+  <Contact> - Contato
+ </ProdContext>
+
+ Usuario
+ <ContextUser> - Coisas do usuario
+  <Login> - Autenticação
+  <DetalhesUsuario> - Dados como endereço, cpf e demais
+  <Favoritos> - itens desejados
+ </ContextUser>
+
+</ContextGeral> - Vai conter favoritos e informações do usuario
+
+
+.categorias {
+  position: relative;
+  display: flex;
+  background: blue;
+  margin: 0;
+  padding: 0;
+}
+
+.categorias li {
+  display: inline-block;
+  width:25%;
+  border: 1px solid;
+}
+
+.categorias li:hover {
+  background: lightgray;
+}
+
+.categorias ul {
+  position: absolute;
+  /* min-width: 200px; */
+  display: none;
+  background: pink;
+}
+
+.categorias li:hover ul{
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  justify-content: flex-start;
+}
+
+.categorias ul li {
+  display: block;
+  margin-left: -40px;
+  min-width: 150%
+}
+
+.categorias ul li:hover {
+  background: lightgray;
+}
