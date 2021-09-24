@@ -20,21 +20,24 @@
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .ulProd li {
-  min-width: 200px;
-  min-height: 390px;
+  min-width: 220px;
+  min-height: 450px;
   max-width: 200px;
-  max-height: 390px;
+  max-height: 450px;
   margin: 0 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 2px lightblue solid;
+  border-radius: 10px;
 }
 
 .divImg {
-  min-height: 250px;
+  min-height: 270px;
   display: flex;
 }
 
@@ -54,17 +57,32 @@
   margin-top: 5px
 }
 
-/* .divText {
-  position: relative;
-  box-sizing:content-box;
-} */
+.divTitle {
+  min-height: 80px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+}
+
+.divPrice {
+  text-align: center;
+}
 
 /* parte da propaganda */
 
-.asideDireita {
-  width: 500px;
+.propagandaCima {
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(37, 62, 70);
 }
 
 .asideEsquerda {
-  width: 500px;
+  display: flex;
+  margin-top: 20px;
+  min-width: 200px;
+  height: 2000px;
+  background-color: pink;
+  /* border: 1px solid */
 }

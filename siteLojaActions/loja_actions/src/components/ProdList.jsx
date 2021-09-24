@@ -8,31 +8,33 @@ function ProdList() {
 
   const { resultApi } = useContext(ProdContext);
   return (
-    <section className="prodSection">
+    <div>
+      <div className="propagandaCima">
+        teremos propaganda aqui
+      </div>
+      <section className="prodSection">
       <aside className="asideEsquerda">
-        <p>TERÁ FILTROS AQUI</p>
-      </aside>
-      <ul className="ulProd">
-        {resultApi === [] ? <p>Carregando...</p> : resultApi.map((action, index) => 
-        <li key={index}>
-          <div className="divImg">
-            <img src={action.images[0]} alt={`${action.productName} imagem`} />
-          </div>
-          <div className="divText">
-            <div>{action.productName}</div>
-            <div>JP¥ {action.price}</div>
-            <div className="buttons">
-              <button>Carrinho</button>
-              <button>Detalhes</button>
+          <p>TERÁ FILTROS AQUI</p>
+        </aside>
+        <ul className="ulProd">
+          {resultApi === [] ? <p>Carregando...</p> : resultApi.map((action, index) => 
+          <li key={index}>
+            <div className="divImg">
+              <img src={action.images[0]} alt={`${action.productName} imagem`} />
             </div>
-          </div>
-        </li>
-        )}
-      </ul>
-      <aside className="asideDireita">
-        <p>terá uma propaganda aqui</p>
-      </aside>
-    </section>
+            <div className="divText">
+              <div className="divTitle">{action.productName}</div>
+              <div className="divPrice">JP¥ {action.price}</div>
+              <div className="buttons">
+                <button>Carrinho</button>
+                <button>Detalhes</button>
+              </div>
+            </div>
+          </li>
+          )}
+        </ul>
+      </section>
+    </div>
   );
 }
 

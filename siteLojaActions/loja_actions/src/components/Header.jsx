@@ -56,7 +56,7 @@ function Header() {
       </section>
       <nav>
         <div className="dropdown">
-          <div className="projects">
+          <div className="projects redondo1">
             <button>Home</button>
           </div>
           <div className="projects">
@@ -74,7 +74,7 @@ function Header() {
               {!series ? null : series.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
           </div>
-          <div className="products">
+          <div className="products redondo2">
           <button>Category</button>
             <ul>
               {!category ? null : category.map((item, index) => <li key={index}>{item}</li>)}

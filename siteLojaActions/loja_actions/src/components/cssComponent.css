@@ -89,6 +89,33 @@ nav {
   justify-content: space-around;
 }
 
+.dropdown div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid;
+}
+
+.redondo1 {
+  border: 1px solid;
+  border-radius: 10px 0 0 10px;
+}
+
+.redondo2 {
+  border: 1px solid;
+  border-radius: 0 10px 10px 0;
+}
+
+.dropdown div:hover {
+  background-color: lightpink;
+}
+
+.dropdown div ul {
+  margin-top: 8vh;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: -5px 2px 5px lightcoral;
+}
+
 .projects,
 .products {
   position: relative;
@@ -101,11 +128,12 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 400px;
   width: max-content;
   min-height: 200px;
   height:max-content;
-  background: white;
+  background: rgb(255, 211, 218);
   left: 0px;
   list-style: none;
   border-radius: 5px;
