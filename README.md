@@ -13,7 +13,7 @@ Ambos necessitam do vs code, mongoDB e node para conseguir rodar.
 3. Inicie a aplicação com <code>npm start</code> primeiramente na 'api', após iniciar o servidor, inicie com <code>npm start</code> na 'siteLojaActions/loja_action'.
 4. Pronto, pode começar a testar!
 
-### Página inicial
+## Página inicial
 
 Contém promoções, categorias e campo de pesquisa.
 
