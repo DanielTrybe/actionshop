@@ -4,6 +4,11 @@ Olá visitante!
 
 Este projeto é particular, estou criando para aprimorar minhas hard skills em React, ContextAPI, NodeJS e MongoDB. O app consiste em um site de vendas que vai conter páginas de listagem de itens, compra, login, cliente e admin.
 
+Utilize npm install para inslatar as dependências.
+Ambos necessitam do vs code, mongoDB e node para conseguir rodar.
+
+Faça a importação do banco de dados que contém no diretório.
+
 ### Página inicial
 
 Contém promoções, categorias e campo de pesquisa.
