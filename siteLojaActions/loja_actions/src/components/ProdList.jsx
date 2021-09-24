@@ -3,12 +3,12 @@ import ProdContext from '../context_API/ProdContext';
 import { Link, useHistory } from 'react-router-dom';
 
 import './prodList.css';
-
+// função de listagem dos produtos recebidos do context
 function ProdList() {
 
   const { resultApi } = useContext(ProdContext);
   return (
-    <div>
+    <div className="prodPrincipal">
       <div className="propagandaCima">
         teremos propaganda aqui
       </div>

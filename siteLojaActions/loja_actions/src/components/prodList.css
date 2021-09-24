@@ -7,15 +7,19 @@
   margin: auto;
 }
 
+/* configuração geral */
+
 .prodSection {
   display: flex;
   background: white;
+  max-width: 1600px;
 }
 
 /* parte dos produtos */
 
 .ulProd {
   margin-top: 10px;
+  width: 149vh;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -72,6 +76,7 @@
 /* parte da propaganda */
 
 .propagandaCima {
+  margin-top: 10px;
   min-height: 80px;
   display: flex;
   justify-content: center;

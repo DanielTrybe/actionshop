@@ -6,14 +6,17 @@ import ProdContext from '../context_API/ProdContext';
 import './cssComponent.css';
 
 function Header() {
-  const { setItemDigitado, funcClickButton } = useContext(ProdContext);
-  const [manufacturers, setManufacturers] = useState([]);
-  const [series, setSeries] = useState([]);
-  const [category, setCategory] = useState([]);
+  const { setItemDigitado, funcClickButton } = useContext(ProdContext); // item digitado pelo usuário e função de buscar o item
+  const [manufacturers, setManufacturers] = useState([]); // categoria
+  const [series, setSeries] = useState([]); // categoria
+  const [category, setCategory] = useState([]); // categoria
+
+// função de adicionar a digitação ao estado
   const handleSearch = (value) => {
     setItemDigitado(value);
   }
 
+// useEffect para trazer categorias
   useEffect(() => {
     fetch(`http://localhost:3000/manufacturers`).then((response) => response.json()).then(({ manufacturers }) => {
       let newSet = new Set();
@@ -32,6 +35,7 @@ function Header() {
     })
 }, []);
 
+// função para buscar trazer toda a lista de itens
     const allShop = () => {
       setItemDigitado('');
       funcClickButton();
@@ -87,15 +91,3 @@ function Header() {
 }
 
 export default Header;
-
-
-{/* <ul className='categorias'>
-<li>All Shop</li>
-<li>Manufacturer
-  <ul>
-    {!categories ? null : categories.map((item, index) => <li key={index}>{item}</li>)}
-  </ul>
-</li>
-<li>Category</li>
-<li>Series</li>
-</ul> */}
