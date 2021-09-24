@@ -7,7 +7,7 @@ Este projeto é particular, estou criando para aprimorar minhas hard skills em R
 Utilize npm install para inslatar as dependências.
 Ambos necessitam do vs code, mongoDB e node para conseguir rodar.
 
-Faça a importação do banco de dados que contém no diretório.
+Faça a importação do banco de dados que contém no diretório api.
 
 ### Página inicial
 
