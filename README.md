@@ -10,7 +10,7 @@ Ambos necessitam do vs code, mongoDB e node para conseguir rodar.
 
 1. Utilize <code>npm install</code> para instalar as dependências tanto na pasta 'api' quanto no diretório 'siteLojaActions/loja_actions'.
 2. Faça a importação do banco de dados que contém no diretório 'api' para seu servidor com o nome do db 'action_figure' e coleção 'scaleFigures'.
-3. Inicie a aplicação com npm start primeiramente na 'api', após iniciar o servidor, inicie com npm start na 'siteLojaActions/loja_action'.
+3. Inicie a aplicação com <code>npm start</code> primeiramente na 'api', após iniciar o servidor, inicie com <code>npm start</code> na 'siteLojaActions/loja_action'.
 4. Pronto, pode começar a testar!
 
 ### Página inicial
