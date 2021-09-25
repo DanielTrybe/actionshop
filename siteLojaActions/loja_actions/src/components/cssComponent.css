@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 section {
   background-image: linear-gradient(lightpink, lightblue);
   height: 70px
@@ -26,6 +31,8 @@ section input {
   height: 35px;
   color: rgb(167, 9, 143);
   background-color: pink;
+  width: 10%;
+  margin-right: -14px;
 }
 
 .headerWidth {
@@ -70,16 +77,14 @@ section input {
 }
 
 .busca input {
-  width: 77%;
-}
-
-.busca button {
-  width: 10%;
+  width: 90%;
+  margin-left: -7px;
 }
 
 .links {
   width: 10%;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   margin: auto;
 }
@@ -101,7 +106,7 @@ nav {
 
 .dropdown {
   height: 8vh;
-  width: 60%;
+  width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -144,6 +149,12 @@ nav {
 .products {
   position: relative;
   max-height: 40px;
+}
+
+.cart {
+  margin-left: 20px;
+  max-height: 40px;
+  border-radius: 10px;
 }
 
 .projects ul,

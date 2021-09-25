@@ -43,6 +43,11 @@
   justify-content: space-between;
   border: 2px lightblue solid;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.ulProd li:hover {
+  border: 2px pink solid;
 }
 
 .divImg {

@@ -49,12 +49,12 @@ function Header() {
             <img src={ logo } alt="logo site" />
           </div>
           <div className="busca">
-            <input type="text" placeholder="Digite o nome do personagem" name="searchTerm" onChange={ ({ target }) => handleSearch(target.value) }/>
+            <input type="text" placeholder="Digite o nome do personagem ou série" name="searchTerm" onChange={ ({ target }) => handleSearch(target.value) }/>
             <button type="button" className="buttonHeader" onClick={ () => funcClickButton() }>Buscar</button>
           </div>
           <div className="links">
-            <Link to='/'><p>Contato</p></Link>
             <Link to='/'><p>Login</p></Link>
+            <Link to='/'><p>Sign Up</p></Link>
           </div>
         </div>
       </section>
@@ -78,11 +78,17 @@ function Header() {
               {!series ? null : series.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
           </div>
-          <div className="products redondo2">
+          <div className="products">
           <button>Category</button>
             <ul>
               {!category ? null : category.map((item, index) => <li key={index}>{item}</li>)}
             </ul>
+          </div>
+          <div className="products redondo2">
+          <button>Contato</button>
+          </div>
+          <div className="cart">
+            <button>Carrinho</button>
           </div>
         </div>
       </nav>
