@@ -9,6 +9,7 @@
 
 section {
   background-image: linear-gradient(lightpink, lightblue);
+  height: 70px
 }
 
 section input {
@@ -22,6 +23,7 @@ section input {
 .buttonHeader {
   border: 1px lightcoral solid;
   border-radius: 5px;
+  height: 35px;
   color: rgb(167, 9, 143);
   background-color: pink;
 }
@@ -34,16 +36,30 @@ section input {
 .headerItens {
   display: flex;
   justify-content: space-between;
+  transition: ease-out 1s;
+  outline: none;
+  box-shadow: inset 0 0 0 0 pink;
+}
+
+.headerItens:hover {
+  box-shadow: inset 340px 50px 20px 0 lightblue;
+  border-radius: 0 0 10px 0;
 }
 
 .sepIMG {
-  width: 20%
+  width: 20%;
 }
 
 .sepIMG img {
   width: 100%;
   height: 100%;
   margin: auto;
+  /* transition: 2s; */
+  /* padding-top: 12px; */
+}
+
+.sepIMG img:hover {
+  opacity: 80%;
 }
 
 .busca {
@@ -54,7 +70,7 @@ section input {
 }
 
 .busca input {
-  width: 90%;
+  width: 77%;
 }
 
 .busca button {
@@ -79,6 +95,7 @@ nav {
   background: lightblue;
   border-radius: 0px 0px 10px 10px;
   padding-bottom: 5px;
+  height: 70px;
   /* height: 50px; */
 }
 
@@ -88,6 +105,7 @@ nav {
   margin: auto;
   display: flex;
   justify-content: space-around;
+  /* margin-left: 50vh; */
 }
 
 .dropdown div {
@@ -95,6 +113,11 @@ nav {
   height: 100%;
   display: flex;
   border: 1px solid;
+}
+
+.dropdown div button {
+  width: 100%;
+  height: 100%;
 }
 
 .redondo1 {
@@ -112,7 +135,7 @@ nav {
 }
 
 .dropdown div ul {
-  margin-top: 8.3vh;
+  margin-top: 5vh;
   /* offset-x | offset-y | blur-radius | color */
   box-shadow: -5px 2px 5px lightcoral;
 }
@@ -120,6 +143,7 @@ nav {
 .projects,
 .products {
   position: relative;
+  max-height: 40px;
 }
 
 .projects ul,
@@ -130,7 +154,7 @@ nav {
   justify-content: space-around;
   flex-direction: column;
   min-width: 300px;
-  max-width: 400px;
+  max-width: 320px;
   width: max-content;
   min-height: 200px;
   height:max-content;
