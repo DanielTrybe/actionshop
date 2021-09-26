@@ -18,20 +18,16 @@ function Header() {
 
 // useEffect para trazer categorias
   useEffect(() => {
-    fetch(`http://localhost:3000/manufacturers`).then((response) => response.json()).then(({ manufacturers }) => {
-      let newSet = new Set();
-      manufacturers.forEach((item) => newSet.add(item.manufacturer));
-      setManufacturers([...newSet]);
-    })
-    fetch(`http://localhost:3000/series`).then((response) => response.json()).then(({ series }) => {
-      let newSet = new Set();
-      series.forEach((item) => newSet.add(item.series));
-      setSeries([...newSet]);
-    })
-    fetch(`http://localhost:3000/category`).then((response) => response.json()).then(({ category }) => {
-      let newSet = new Set();
-      category.forEach((item) => newSet.add(item.category));
-      setCategory([...newSet]);
+    fetch(`http://localhost:3000/categories`).then((response) => response.json()).then(({ categoriesList: { manufacturers, series, category }}) => {
+      let setManu = new Set();
+      let setSeri = new Set();
+      let setCateg = new Set();
+      manufacturers.forEach((item) => setManu.add(item.manufacturer));
+      setManufacturers([...setManu]);
+      series.forEach((item) => setSeri.add(item.series));
+      setSeries([...setSeri]);
+      category.forEach((item) => setCateg.add(item.category));
+      setCategory([...setCateg]);
     })
 }, []);
 
