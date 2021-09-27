@@ -1,9 +1,18 @@
 const connection = require('./connection');
+// const { ObjectId } = require('mongodb');
+const { ObjectId } = require('mongodb');
 
 const getAll = async () => {
   return connection()
     .then((db) => db.collection('scaleFigures').find().toArray());
 };
+
+const getOne = async (id) => {
+  const db = await connection();
+  const result = await db.collection('scaleFigures').findOne(ObjectId(id));
+  return result;
+};
+
 
 const getFromSeries = async (item) => {
   const db = await connection();
@@ -23,4 +32,5 @@ module.exports = {
   getAll,
   getFromSeries,
   getAllFiltered,
+  getOne,
 }
