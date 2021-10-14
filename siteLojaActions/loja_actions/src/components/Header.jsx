@@ -1,16 +1,17 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import logo from '../images/logo.png'
 import ProdContext from '../context_API/ProdContext';
 // css
-import './cssComponent.css';
+import './css/cssComponent.css';
 
 function Header() {
   const { setItemDigitado, funcClickButton } = useContext(ProdContext); // item digitado pelo usuário e função de buscar o item
   const [manufacturers, setManufacturers] = useState([]); // categoria
   const [series, setSeries] = useState([]); // categoria
   const [category, setCategory] = useState([]); // categoria
-
+  const location = useLocation();
+  const history = useHistory();
 // função de adicionar a digitação ao estado
   const handleSearch = (value) => {
     setItemDigitado(value);
@@ -37,6 +38,14 @@ function Header() {
       funcClickButton();
     }
 
+    const listItens = ({name}) => {
+      console.log(name)
+      if (location.pathname !== '/') {
+        history.push('/')
+      }
+      allShop();
+    }
+
   return (
     <header className="headerWidth">
       <section>
@@ -60,7 +69,7 @@ function Header() {
             <button>Home</button>
           </div>
           <div className="projects">
-            <button onClick={ () => allShop() }>All Shop</button>
+            <button name='allShop' onClick={ ({target}) => listItens(target) }>All Shop</button>
           </div>
           <div className="products">
           <button>Manufacturer</button>
@@ -93,3 +102,5 @@ function Header() {
 }
 
 export default Header;
+
+// arrumar detalhes 
