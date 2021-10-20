@@ -2,7 +2,7 @@
 
 Olá visitante!
 
-Este projeto é particular, estou criando para aprimorar minhas hard skills em React, ContextAPI, NodeJS e MongoDB. O app consiste em um site de vendas que vai conter páginas de listagem de itens, compra, login, cliente e admin.
+Sempre gostei de desenhos animados e quero poder ter uma grande coleção, por isto decidi fazer este projeto com este tema para aprimorar minhas hard skills em React, ContextAPI, NodeJS e MongoDB. O app consiste em um site de vendas que vai conter páginas de listagem de itens, compra, login, cliente e admin.
 
 Ambos necessitam do VS code, mongoDB e node para conseguir rodar.
 
