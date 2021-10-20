@@ -9,7 +9,7 @@ Ambos necessitam do VS code, mongoDB e node para conseguir rodar.
 #### Iniciando
 
 1. Cria uma pasta no seu computador onde preferir e abra o terminal dentro dela ou abra a pasta dentro VScode e então abra o terminal do VScode.
-2. Faça o clone do repositório com <code>git clone git@github.com:DanielTrybe/actionshop.git<code>
+2. Faça o clone do repositório com <code>git clone git@github.com:DanielTrybe/actionshop.git</code>
   
 #### Navegando
   
