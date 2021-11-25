@@ -9,13 +9,14 @@ function ProductDetails(props) {
   const { id } = props.match.params
   const [oneItem, setOneItem] = useState('');
   const [oneImage, setOneImage] = useState('');
-  console.log(oneImage)
+
   useEffect(() => {
     fetch(`http://localhost:3000/actions/${id}`).then((response) => response.json()).then(({Action}) => {
       setOneItem(Action)
       setOneImage(Action.images[0])
-    })
-  }, [])
+    });
+  }, []);
+
   return (
     <>
     <Header />
@@ -51,4 +52,3 @@ function ProductDetails(props) {
 }
 
 export default ProductDetails;
-

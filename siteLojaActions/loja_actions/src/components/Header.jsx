@@ -19,7 +19,9 @@ function Header() {
 
 // useEffect para trazer categorias
   useEffect(() => {
-    fetch(`http://localhost:3000/categories`).then((response) => response.json()).then(({ categoriesList: { manufacturers, series, category }}) => {
+    fetch(`http://localhost:3000/categories`)
+      .then((response) => response.json())
+      .then(({ categoriesList: { manufacturers, series, category }}) => {
       let setManu = new Set();
       let setSeri = new Set();
       let setCateg = new Set();

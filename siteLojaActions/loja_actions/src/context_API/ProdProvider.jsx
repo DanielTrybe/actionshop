@@ -10,7 +10,9 @@ function ProdProvider({children}) {
   const [itemDigitado, setItemDigitado] = useState('');
 
   const funcClickButton = () => {
-    fetch(`http://localhost:3000/actions/?search=${itemDigitado}`).then((response) => response.json()).then(({ allActions }) => setResultApi(allActions));
+    fetch(`http://localhost:3000/actions/?search=${itemDigitado}`)
+      .then((response) => response.json())
+      .then(({ allActions }) => setResultApi(allActions));
   }
 
   const values = {

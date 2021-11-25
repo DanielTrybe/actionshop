@@ -148,7 +148,20 @@ nav {
 .projects,
 .products {
   position: relative;
-  max-height: 40px;
+  max-height: 40px; 
+}
+
+.products button:active {
+  -webkit-box-shadow: inset 0px 0px 5px 2px gray;
+  -moz-box-shadow: inset 0px 0px 5px 2px gray;
+  box-shadow: inset 0px 0px 5px 2px gray;
+}
+
+.products button:focus {
+  background-color: lightpink;
+  -webkit-box-shadow: inset 0px 0px 5px 2px gray;
+  -moz-box-shadow: inset 0px 0px 5px 2px gray;
+  box-shadow: inset 0px 0px 5px 2px gray;
 }
 
 .cart {
